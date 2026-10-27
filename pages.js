@@ -69,6 +69,7 @@
 
 	// ---- catalogues ----
 	const GAMES = [
+		...window.pokemonGames.map(game => ({name:game.title,url:"games/pokemon/index.html?game="+game.slug,img:"games/pokemon/covers/"+game.slug+".png",local:true,splash:"load"})),
 		{ name: "Fears to Fathom", url: "games/fears-to-fathom/index.html", img: "games/fears-to-fathom.jpg", local: true, download: true },
 		{ name: "Fears to Fathom: Home Alone", url: "games/fears-home-alone/index.html", img: "games/fears-to-fathom.jpg", local: true, download: true },
 		{ name: "Hollow Knight", url: "games/hollow-knight/index.html", img: "games/hollow-knight.jpg", local: true, download: true },
@@ -76,7 +77,7 @@
 		{ name: "Cuphead", url: "games/cuphead/index.html", img: "games/cuphead.jpg", imgPosition: "center top", local: true, download: true },
 		{ name: "A Dance of Fire and Ice", url: "games/adofai/index.html?v=2", img: "games/adofai.jpg", imgPosition: "center top", local: true, download: true },
 		{ name: "Flying Gorilla", url: "games/flying-gorilla/index.html", img: "games/flying-gorilla.png", imgPosition: "center top", local: true, download: true },
-		{ name: "Geometry Dash", url: "games/geometry-dash/index.html", img: "games/geometry-dash.jpg", imgPosition: "center top", local: true, download: true },
+		{ name: "Geometry Dash", url: "games/geometry-dash/index.html", img: "games/geometry-dash.jpg", imgPosition: "center top", local: true, download: true, splash: "load" },
 		{ name: "Web Dashers", url: "games/web-dashers/index.html", img: "games/web-dashers.png", imgPosition: "center top", local: true, download: true },
 		{ name: "Buckshot Roulette", url: "games/buckshot-roulette/index.html", img: "games/buckshot-roulette.jpg", imgPosition: "center top", local: true, download: true },
 		{
